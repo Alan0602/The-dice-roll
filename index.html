@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The Dice Roll</h1>
+    <div class="box">
+        <center>
+            <p id="spin"></p>
+        </center>
+    </div>
+    <button id="button" onclick="roll()">Roll Dice</button>
+    <script>
+       function roll(){
+        var dice = Math.floor(Math.random()* 6 +1)
+        document.getElementById("spin").innerHTML=dice
+       }
+    </script>
+</body>
+</html>
